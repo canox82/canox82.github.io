@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>C82 - Blog</title>
+
+		
+
+		<link rel="modulepreload" href="/_app/start-a2ce9bbf.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-e07562cf.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-e71c06fb.js">
+		<link rel="modulepreload" href="/_app/pages/blog/__layout.svelte-7dc96ae7.js">
+		<link rel="modulepreload" href="/_app/pages/blog/index.svelte-2a0c376c.js">
+		<link rel="stylesheet" href="/_app/assets/start-464e9d0a.css">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-dfbb9b05.css">
+
+		<script type="module">
+			import { start } from "/_app/start-a2ce9bbf.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/_app/pages/__layout.svelte-e71c06fb.js"),
+						import("/_app/pages/blog/__layout.svelte-7dc96ae7.js"),
+						import("/_app/pages/blog/index.svelte-2a0c376c.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "\u002Fblog",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<main><div><main><nav class="bg-blue-200 m-5 rounded-xl p-2 text-gray-600"><a href="/">Home</a>
+        <a href="/about">About Me</a></nav></main>
+		<div class="mx-5">
+
+<main class="mx-5"><p class="text-centered text-blue-600 text-2xl">Elenco Post</p>
+    <ul><li><a href="./blog/20211102" class="text-indigo-800">Primo Post</a>
+            <div class="flex"></div>
+            <p>È universalmente riconosciuto che un lettore che osserva il layout di una pagina viene distratto dal contenuto testuale se questo è leggibile. Lo scopo dell’utilizzo del Lorem Ipsum è che offre una normale distribuzione delle lettere (al contrario di quanto avviene se si utilizzano brevi frasi ripetute, ad esempio “testo qui”), apparendo come un normale blocco di testo leggibile. Molti software di impaginazione e di web design utilizzano Lorem Ipsum come testo modello. Molte versioni del testo sono state prodotte negli anni, a volte casualmente, a volte di proposito (ad esempio inserendo passaggi ironici).</p>
+        </li></ul></main></div></div></main>
+
+
+
+			<script type="application/json" data-type="svelte-data" data-url="./blog/posts.json">{"status":200,"statusText":"","headers":{"content-type":"application/json; charset=utf-8"},"body":"{\"posts\":[{\"layout\":\"blog\",\"title\":\"Primo Post\",\"date\":\"2021\u002F11\u002F02 15:30\",\"tags\":[\"liberamente\",\"primo\"],\"pre\":\"È universalmente riconosciuto che un lettore che osserva il layout di una pagina viene distratto dal contenuto testuale se questo è leggibile. Lo scopo dell’utilizzo del Lorem Ipsum è che offre una normale distribuzione delle lettere (al contrario di quanto avviene se si utilizzano brevi frasi ripetute, ad esempio “testo qui”), apparendo come un normale blocco di testo leggibile. Molti software di impaginazione e di web design utilizzano Lorem Ipsum come testo modello. Molte versioni del testo sono state prodotte negli anni, a volte casualmente, a volte di proposito (ad esempio inserendo passaggi ironici).\",\"slug\":\"20211102\"}]}"}</script>
+		</div>
+	</body>
+</html>

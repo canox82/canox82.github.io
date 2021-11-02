@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>C82 - About Me</title>
+
+		
+
+		<link rel="modulepreload" href="/_app/start-a2ce9bbf.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-e07562cf.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-e71c06fb.js">
+		<link rel="modulepreload" href="/_app/pages/about.svelte-68ac84f6.js">
+		<link rel="stylesheet" href="/_app/assets/start-464e9d0a.css">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-dfbb9b05.css">
+
+		<script type="module">
+			import { start } from "/_app/start-a2ce9bbf.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/_app/pages/__layout.svelte-e71c06fb.js"),
+						import("/_app/pages/about.svelte-68ac84f6.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "\u002Fabout",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<main><div><main><nav class="bg-blue-200 m-5 rounded-xl p-2 text-gray-600"><a href="/">Home</a>
+        <a href="/about">About Me</a></nav></main>
+		
+
+<main class="mx-5"><div><p class="text-center text-blue-500 text-xl">About me
+        </p>
+        <p>Appassionato di tecnologia, programmazione, videogames, motociclismo, rugby e football americano. <br>
+            Su questo blog/diario approfondirò ogni mia passione.
+        </p>
+        <p class="italic">canox82</p></div></main></div></main>
+
+
+
+			
+		</div>
+	</body>
+</html>
