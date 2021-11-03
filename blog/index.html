@@ -8,16 +8,16 @@
 
 		
 
-		<link rel="modulepreload" href="/_app/start-f110d4b1.js">
-		<link rel="modulepreload" href="/_app/chunks/vendor-9da974ac.js">
-		<link rel="modulepreload" href="/_app/pages/__layout.svelte-863ff2c1.js">
-		<link rel="modulepreload" href="/_app/pages/blog/__layout.svelte-d2f6d8c5.js">
-		<link rel="modulepreload" href="/_app/pages/blog/index.svelte-3786bce1.js">
+		<link rel="modulepreload" href="/_app/start-32e0b5b9.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-8dfe4840.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-e6e5a9d7.js">
+		<link rel="modulepreload" href="/_app/pages/blog/__layout.svelte-ba83c075.js">
+		<link rel="modulepreload" href="/_app/pages/blog/index.svelte-00542da6.js">
 		<link rel="stylesheet" href="/_app/assets/start-464e9d0a.css">
-		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-7d4d169a.css">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-45deb8da.css">
 
 		<script type="module">
-			import { start } from "/_app/start-f110d4b1.js";
+			import { start } from "/_app/start-32e0b5b9.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":""},
@@ -30,9 +30,9 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/_app/pages/__layout.svelte-863ff2c1.js"),
-						import("/_app/pages/blog/__layout.svelte-d2f6d8c5.js"),
-						import("/_app/pages/blog/index.svelte-3786bce1.js")
+						import("/_app/pages/__layout.svelte-e6e5a9d7.js"),
+						import("/_app/pages/blog/__layout.svelte-ba83c075.js"),
+						import("/_app/pages/blog/index.svelte-00542da6.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -48,20 +48,29 @@
 		<div id="svelte">
 
 
-<main><div><main><nav class="bg-blue-200 m-5 rounded-xl p-2 text-gray-600"><a href="/">Home</a>
+<main><div><main><nav class="grid grid-flow-col auto-cols-max gap-8 bg-blue-200 m-5 rounded-xl p-2 text-blue-800 text-center text-xl font-semibold"><a href="/">Home</a>
+        <a href="/blog">Blog</a>
         <a href="/about">About Me</a></nav></main>
 		<div class="mx-5">
 
 <main><p class="text-center text-blue-800 text-2xl">Elenco Post</p>
-    <ul><li><a href="./blog/20211102"><span class="text-blue-800 text-lg">Primo Post</span> <span class="text-blue-800 text-s">2021/11/02 20:30</span></a>
+    <ul class="flex flex-col-reverse"><li class="flex-initial"><a href="./blog/20211102" class="items-end"><span class="text-blue-800 text-lg">Primo Post</span> <span class="text-blue-800 text-sm">∞ 2021/11/02 20:30</span></a>
             <div class="flex"><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">PRIMO</p>
                 </div><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">CRESCITA</p>
                 </div></div>
+            <p class="italic text-blue-800 text-sm"> Da qualche parte bisognava pur iniziare... :) In questo primo post cercherò di rispondere alle classiche 5 domande: Che cosa? Chi? Dove? Quando? Perchè? Se siete interessati proseguite nella lettura.</p>
+            <hr class="border-1 border-blue-400 justify-center my-2">
+        </li><li class="flex-initial"><a href="./blog/20211103" class="items-end"><span class="text-blue-800 text-lg">Ho installato ArchLinux sul Surface!</span> <span class="text-blue-800 text-sm">∞ 2021/11/03 21:00</span></a>
+            <div class="flex"><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">LINUX</p>
+                </div><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">SURFACE PRO</p>
+                </div></div>
+            <p class="italic text-blue-800 text-sm"> Da un po&#39; di tempo il mio vecchio Surface 4 Pro arrancava un po&#39;, allora mi son detto perchè non proviamo ad installare una distro di linux?</p>
+            <hr class="border-1 border-blue-400 justify-center my-2">
         </li></ul></main></div></div></main>
 
 
 
-			<script type="application/json" data-type="svelte-data" data-url="./blog/posts.json">{"status":200,"statusText":"","headers":{"content-type":"application/json; charset=utf-8"},"body":"{\"posts\":[{\"layout\":\"blog\",\"title\":\"Primo Post\",\"date\":\"2021\u002F11\u002F02 20:30\",\"tags\":[\"primo\",\"crescita\"],\"pre\":\" Da qualche parte bisognava pur iniziare... :) In questo primo post cercherò di rispondere alle classiche 5 domande: Che cosa? Chi? Dove? Quando? Perchè? Se siete interessati proseguite nella lettura.\",\"slug\":\"20211102\"}]}"}</script>
+			<script type="application/json" data-type="svelte-data" data-url="./blog/posts.json">{"status":200,"statusText":"","headers":{"content-type":"application/json; charset=utf-8"},"body":"{\"posts\":[{\"layout\":\"blog\",\"title\":\"Primo Post\",\"date\":\"2021\u002F11\u002F02 20:30\",\"tags\":[\"primo\",\"crescita\"],\"pre\":\" Da qualche parte bisognava pur iniziare... :) In questo primo post cercherò di rispondere alle classiche 5 domande: Che cosa? Chi? Dove? Quando? Perchè? Se siete interessati proseguite nella lettura.\",\"slug\":\"20211102\"},{\"layout\":\"blog\",\"title\":\"Ho installato ArchLinux sul Surface!\",\"date\":\"2021\u002F11\u002F03 21:00\",\"tags\":[\"linux\",\"surface pro\"],\"pre\":\" Da un po' di tempo il mio vecchio Surface 4 Pro arrancava un po', allora mi son detto perchè non proviamo ad installare una distro di linux?\",\"slug\":\"20211103\"}]}"}</script>
 		</div>
 	</body>
 </html>

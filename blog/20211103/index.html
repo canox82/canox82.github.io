@@ -11,7 +11,7 @@
 		<link rel="modulepreload" href="/_app/start-32e0b5b9.js">
 		<link rel="modulepreload" href="/_app/chunks/vendor-8dfe4840.js">
 		<link rel="modulepreload" href="/_app/pages/__layout.svelte-e6e5a9d7.js">
-		<link rel="modulepreload" href="/_app/pages/index.svelte-7db7ff31.js">
+		<link rel="modulepreload" href="/_app/pages/blog/__layout.svelte-ba83c075.js">
 		<link rel="modulepreload" href="/_app/pages/blog/20211103.md-7674f57d.js">
 		<link rel="modulepreload" href="/_app/pages/blog/layoutBlog.svelte-1f9bca89.js">
 		<link rel="stylesheet" href="/_app/assets/start-464e9d0a.css">
@@ -32,11 +32,12 @@
 					error: null,
 					nodes: [
 						import("/_app/pages/__layout.svelte-e6e5a9d7.js"),
-						import("/_app/pages/index.svelte-7db7ff31.js")
+						import("/_app/pages/blog/__layout.svelte-ba83c075.js"),
+						import("/_app/pages/blog/20211103.md-7674f57d.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
-						path: "\u002F",
+						path: "\u002Fblog\u002F20211103",
 						query: new URLSearchParams(""),
 						params: {}
 					}
@@ -51,9 +52,7 @@
 <main><div><main><nav class="grid grid-flow-col auto-cols-max gap-8 bg-blue-200 m-5 rounded-xl p-2 text-blue-800 text-center text-xl font-semibold"><a href="/">Home</a>
         <a href="/blog">Blog</a>
         <a href="/about">About Me</a></nav></main>
-		
-
-<main class="mx-5">
+		<div class="mx-5">
 
 <div><div class="text-center"><p class="text-blue-800 text-2xl">Ho installato ArchLinux sul Surface!</p>
         <p class="text-blue-800 text-xs">2021/11/03 21:00</p></div>
@@ -82,7 +81,7 @@ Da ricerche su internet scopro che sono disponibili delle patch per i kernel arc
 <br>
 Da qui in avanti è tutta discesa! Il Surface è tornato a nuova luce! Ho dovuto personalizzare il DE, uso XFCE4 e xMonad a seconda dei momenti, impostando i DPI e le scorciatoie dei tasti multimediali ma ho un <em>“Surface Linux”</em> completamente funzionante!</p>
     <div class="my-5 flex justify-center"><div class="flex-initial"><hr class="border-1 border-blue-600">
-            <a href="/blog" class="text-blue-600">Leggi altri post</a></div></div></div></main></div></main>
+            <a href="/blog" class="text-blue-600">Leggi altri post</a></div></div></div></div></div></main>
 
 
 
