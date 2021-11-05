@@ -8,17 +8,18 @@
 
 		
 
-		<link rel="modulepreload" href="/_app/start-32e0b5b9.js">
+		<link rel="modulepreload" href="/_app/start-39ac581e.js">
 		<link rel="modulepreload" href="/_app/chunks/vendor-8dfe4840.js">
-		<link rel="modulepreload" href="/_app/pages/__layout.svelte-e6e5a9d7.js">
+		<link rel="modulepreload" href="/_app/chunks/preload-helper-ec9aa979.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-4aa2ab01.js">
 		<link rel="modulepreload" href="/_app/pages/blog/__layout.svelte-ba83c075.js">
-		<link rel="modulepreload" href="/_app/pages/blog/20211102.md-918ee1e7.js">
-		<link rel="modulepreload" href="/_app/pages/blog/layoutBlog.svelte-1f9bca89.js">
+		<link rel="modulepreload" href="/_app/pages/blog/20211102.md-73ab2e3f.js">
+		<link rel="modulepreload" href="/_app/pages/blog/layoutBlog.svelte-c19f5483.js">
 		<link rel="stylesheet" href="/_app/assets/start-464e9d0a.css">
-		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-45deb8da.css">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-6fafa4ff.css">
 
 		<script type="module">
-			import { start } from "/_app/start-32e0b5b9.js";
+			import { start } from "/_app/start-39ac581e.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":""},
@@ -31,9 +32,9 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/_app/pages/__layout.svelte-e6e5a9d7.js"),
+						import("/_app/pages/__layout.svelte-4aa2ab01.js"),
 						import("/_app/pages/blog/__layout.svelte-ba83c075.js"),
-						import("/_app/pages/blog/20211102.md-918ee1e7.js")
+						import("/_app/pages/blog/20211102.md-73ab2e3f.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -49,41 +50,46 @@
 		<div id="svelte">
 
 
-<main><div><main><nav class="grid grid-flow-col auto-cols-max gap-8 bg-blue-200 m-5 rounded-xl p-2 text-blue-800 text-center text-xl font-semibold"><a href="/">Home</a>
-        <a href="/blog">Blog</a>
-        <a href="/about">About Me</a></nav></main>
+<main class="flex justify-center"><div class="font-work md:w-10/12 lg:w-8/12"><main><nav class="grid grid-flow-col bg-blue-200 m-5 rounded-xl p-2 text-center text-xl font-semibold md:auto-cols-max gap-x-10"><a href="/" class="text-blue-800 hover:text-blue-500">Home</a>
+        <a href="/blog" class="text-blue-800 hover:text-blue-500">Blog</a>
+        <a href="/about" class="text-blue-800 hover:text-blue-500">About Me</a></nav></main>
 		<div class="mx-5">
 
-<div><div class="text-center"><p class="text-blue-800 text-2xl">Primo Post</p>
-        <p class="text-blue-800 text-xs">2021/11/02 20:30</p></div>
-    <div class="flex justify-center"><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">primo</p>
-        </div><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">crescita</p>
-        </div></div>
-    <div class="text-blue-800 text-center italic"> Da qualche parte bisognava pur iniziare... :) In questo primo post cercherò di rispondere alle classiche 5 domande: Che cosa? Chi? Dove? Quando? Perchè? Se siete interessati proseguite nella lettura.</div>
-    <br>
-<p><strong>Che cosa?</strong></p>
-<p>Ovvero cosa è questo Blog… beh è un contenitore di idee, di spunti, di sogni e di casini come sempre, perchè la vita è fatta così, si parte con un piano, lo pianifichi poi arrivano gli imprevisti e le probabilità come al Monopoly e alla fine il piano iniziale va a farsi benedire!</p>
-<p>L’importante, come sempre, è mantenere un obiettivo di modo da puntare la rotta in quella direzione e non perdere la bussola.</p>
+<div><div class="flex flex-col justify-center items-center space-y-0.5 mb-10"><div class="text-center"><p class="text-blue-800 text-2xl">Primo Post</p>
+            <p class="text-blue-800 text-xs">2021/11/02 20:30</p></div>
+        <div class="flex justify-center"><a href="/tags/blog"><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">blog</p></div>
+            </a><a href="/tags/crescita"><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">crescita</p></div>
+            </a></div>
+        <div class="text-center text-blue-800 italic w-2/3"> Da qualche parte bisognava pur iniziare... :) In questo primo post cercherò di rispondere alle classiche 5 domande: Che cosa? Chi? Dove? Quando? Perchè? Se siete interessati proseguite nella lettura.</div>
+        <hr class="border-1 border-blue-800 border-dotted w-2/3"></div>
+    <div class="content"><p><strong>Che cosa?</strong><br>
+Ovvero cosa è questo Blog… beh è un contenitore di idee, di spunti, di sogni e di casini come sempre, perchè la vita è fatta così, si parte con un piano, lo pianifichi poi arrivano gli imprevisti e le probabilità come al Monopoly e alla fine il piano iniziale va a farsi benedire!<br>
 <br>
-<p><strong>Chi?</strong></p>
-<p>Ovvero me. Capita che la vita non è quella che hai pianificato, che te ne sono capitate di ogni e l’unica cosa che hai imparato è che con probabilità te ne capiteranno altre, quindi meglio godersi ogni attimo e prendere ciò che viene.</p>
-<p>Sono appassionato di tecnologia, vecchi videogiochi (Atari e Sega), motori, rugby e football americano, cani e animali in genere e mi faccio intrippare dalle cose belle, ma quelle belle sul serio (ci dovrò scrivere un post sul BELLO).</p>
+L’importante, come sempre, è mantenere un obiettivo di modo da puntare la rotta in quella direzione e non perdere la bussola.<br>
 <br>
-<p><strong>Dove?</strong></p>
-<p>Reggio Emilia, dove sono nato e vivo. </p>
-<p>Ma anche Verona dove sono rinato un anno fa.</p>
-<p>E Brescia dove ho un prolungamento della famiglia.</p>
+<strong>Chi?</strong><br>
+Ovvero me. Capita che la vita non è quella che hai pianificato, che te ne sono capitate di ogni e l’unica cosa che hai imparato è che con probabilità te ne capiteranno altre, quindi meglio godersi ogni attimo e prendere ciò che viene.<br>
+Sono appassionato di tecnologia, vecchi videogiochi (Atari e Sega), motori, rugby e football americano, cani e animali in genere e mi faccio intrippare dalle cose belle, ma quelle belle sul serio (ci dovrò scrivere un post sul BELLO).<br>
 <br>
-<p><strong>Quando?</strong></p>
-<p>Adesso! </p>
-<p>Perchè se ti trapiantano mentre fuori c’è una pandemia, a circa un anno di distanza il virus ti colpisce ma ne esci, beh scusate il francesismo ma è il momento di muovere il culo e dare un giro alla vita!</p>
-<p>Ah mi sono anche licenziato, o sono folle o avevo proprio bisogno di una svolta.</p>
+<strong>Dove?</strong><br>
+Reggio Emilia, dove sono nato e vivo.<br>
+Ma anche Verona dove sono rinato un anno fa.<br>
+E Brescia dove ho un prolungamento della famiglia.<br>
 <br>
-<p><strong>Perchè?</strong></p>
-<p>L’ho un po’ anticipato nel punto precendente, questo blog accompagnerà in un certo senso la mia rinascita.</p>
-<p>Per carità, non sarà concentrato sulla mia vita, non voglio annoiarvi… vi parlerò delle mie passioni e spero di essere utile a qualcuno, così come molti di voi lo sono stati mentre ero bloccato su un letto di ospedale.</p>
-    <div class="my-5 flex justify-center"><div class="flex-initial"><hr class="border-1 border-blue-600">
-            <a href="/blog" class="text-blue-600">Leggi altri post</a></div></div></div></div></div></main>
+<strong>Quando?</strong><br>
+Adesso!<br>
+Perchè se ti trapiantano mentre fuori c’è una pandemia, a circa un anno di distanza il virus ti colpisce ma ne esci, beh scusate il francesismo ma è il momento di muovere il culo e dare un giro alla vita!<br>
+Ah mi sono anche licenziato, o sono folle o avevo proprio bisogno di una svolta.<br>
+<br>
+<strong>Perchè?</strong><br>
+L’ho un po’ anticipato nel punto precendente, questo blog accompagnerà in un certo senso la mia rinascita.<br>
+Per carità, non sarà concentrato sulla mia vita, non voglio annoiarvi… vi parlerò delle mie passioni e spero di essere utile a qualcuno, così come molti di voi lo sono stati mentre ero bloccato su un letto di ospedale.</p></div>
+    <div class="my-8 flex justify-center"><div class="flex-initial"><hr class="border-1 border-blue-600">
+            <a href="/blog" class="text-blue-600 hover:text-blue-900">Leggi altri post</a>
+            <hr class="border-1 border-blue-600"></div></div></div></div>
+		<main><div class="flex flex-col justify-center items-center text-center bg-blue-200 rounded-xl my-2"><span class="text-xs"> </span>
+        <span class="text-blue-800 text-sm font-semibold">canox82 - 2021</span>
+        <span class="text-xs"> </span></div></main></div></main>
 
 
 

@@ -8,17 +8,18 @@
 
 		
 
-		<link rel="modulepreload" href="/_app/start-32e0b5b9.js">
+		<link rel="modulepreload" href="/_app/start-39ac581e.js">
 		<link rel="modulepreload" href="/_app/chunks/vendor-8dfe4840.js">
-		<link rel="modulepreload" href="/_app/pages/__layout.svelte-e6e5a9d7.js">
+		<link rel="modulepreload" href="/_app/chunks/preload-helper-ec9aa979.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-4aa2ab01.js">
 		<link rel="modulepreload" href="/_app/pages/blog/__layout.svelte-ba83c075.js">
-		<link rel="modulepreload" href="/_app/pages/blog/20211103.md-7674f57d.js">
-		<link rel="modulepreload" href="/_app/pages/blog/layoutBlog.svelte-1f9bca89.js">
+		<link rel="modulepreload" href="/_app/pages/blog/20211103.md-d0753074.js">
+		<link rel="modulepreload" href="/_app/pages/blog/layoutBlog.svelte-c19f5483.js">
 		<link rel="stylesheet" href="/_app/assets/start-464e9d0a.css">
-		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-45deb8da.css">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-6fafa4ff.css">
 
 		<script type="module">
-			import { start } from "/_app/start-32e0b5b9.js";
+			import { start } from "/_app/start-39ac581e.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":""},
@@ -31,9 +32,9 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/_app/pages/__layout.svelte-e6e5a9d7.js"),
+						import("/_app/pages/__layout.svelte-4aa2ab01.js"),
 						import("/_app/pages/blog/__layout.svelte-ba83c075.js"),
-						import("/_app/pages/blog/20211103.md-7674f57d.js")
+						import("/_app/pages/blog/20211103.md-d0753074.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -49,26 +50,27 @@
 		<div id="svelte">
 
 
-<main><div><main><nav class="grid grid-flow-col auto-cols-max gap-8 bg-blue-200 m-5 rounded-xl p-2 text-blue-800 text-center text-xl font-semibold"><a href="/">Home</a>
-        <a href="/blog">Blog</a>
-        <a href="/about">About Me</a></nav></main>
+<main class="flex justify-center"><div class="font-work md:w-10/12 lg:w-8/12"><main><nav class="grid grid-flow-col bg-blue-200 m-5 rounded-xl p-2 text-center text-xl font-semibold md:auto-cols-max gap-x-10"><a href="/" class="text-blue-800 hover:text-blue-500">Home</a>
+        <a href="/blog" class="text-blue-800 hover:text-blue-500">Blog</a>
+        <a href="/about" class="text-blue-800 hover:text-blue-500">About Me</a></nav></main>
 		<div class="mx-5">
 
-<div><div class="text-center"><p class="text-blue-800 text-2xl">Ho installato ArchLinux sul Surface!</p>
-        <p class="text-blue-800 text-xs">2021/11/03 21:00</p></div>
-    <div class="flex justify-center"><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">linux</p>
-        </div><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">surface pro</p>
-        </div></div>
-    <div class="text-blue-800 text-center italic"> Da un po&#39; di tempo il mio vecchio Surface 4 Pro arrancava un po&#39;, allora mi son detto perchè non proviamo ad installare una distro di linux?</div>
-    <br>
-Beh spettacolo!
-<p>All’inizio ho provato una live di Ubuntu via USB. La cosa messa così suona facile, prendi la iso, la scrivi sulla chiavetta, riavvi il pc e aspetti il boot.<br>
+<div><div class="flex flex-col justify-center items-center space-y-0.5 mb-10"><div class="text-center"><p class="text-blue-800 text-2xl">Ho installato ArchLinux sul Surface!</p>
+            <p class="text-blue-800 text-xs">2021/11/03 21:00</p></div>
+        <div class="flex justify-center"><a href="/tags/linux"><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">linux</p></div>
+            </a><a href="/tags/surface pro"><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">surface pro</p></div>
+            </a></div>
+        <div class="text-center text-blue-800 italic w-2/3"> Da un po&#39; di tempo il mio vecchio Surface 4 Pro arrancava un po&#39;, allora mi son detto perchè non proviamo ad installare una distro di linux?</div>
+        <hr class="border-1 border-blue-800 border-dotted w-2/3"></div>
+    <div class="content"><p>Beh spettacolo!  </p>
+<p> <br>
+All’inizio ho provato una live di Ubuntu via USB. La cosa messa così suona facile, prendi la iso, la scrivi sul supporto USB, riavvi il pc e aspetti il boot.<br>
 <br>
 <strong>Eh no!</strong><br>
 <br>
 Nel fantastico mondo dei Surface il boot è protetto e non accetta altri sistemi che non siano Microsoft, o riconosciuti/certificati da Microsoft stessa. Quindi per prima cosa bisogna entrare nel Bios e disabilitare il secure boot. Non una cosa semplicissima dato che i genietti di Redmond hanno cambiato modalità ad ogni versione hardware dei dispositivi, comunque al terzo tentativo ci siamo riusciti.<br>
 <br>
-Una volta avviata Ubuntu mi son detto che era necessario provare Arch, forse l’unica distro con un livello di leggerezza ed ottimizzazione che mi soddisfi al momento in compagnia di Void.<br>
+Una volta avviata Ubuntu mi son detto che era necessario provare Arch, forse l’unica distro con un livello di leggerezza ed ottimizzazione che mi soddisfi al momento, al pari di Void.<br>
 Tra le varie live e derivate ho scelto <a href="https://endeavouros.com" target="_blank">Endevour</a>, scarico l’ISO, preparo la chiavetta e parto con l’installazione.<br>
 <br>
 Decido di formattare completamente il disco, al limite potrò reinstallare una versione di Windows da chiavetta se mai un giorno impazzirò; i primi due tentativi vanno a vuoto, l’installazione si blocca dato che il touchpad impazzisce, alla terza stacco la tastiera dopo che l’installazione è partita. Quando arriva al 100% la ricollego, funziona, finisco di inserire gli ultimi dati e riavvio.<br>
@@ -79,9 +81,13 @@ Eseguo subito un <strong>pacman -Syu</strong> e aggiorno il sistema, riavvio ed 
 <br>
 Da ricerche su internet scopro che sono disponibili delle patch per i kernel archlinux appositamente create per garantire una maggior compatibilità e risolvere vari problemi. Si trova tutto sulla pagina github <a href="https://github.com/dmhacker/arch-linux-surface" target="_blank">arch-linux-surface</a>.<br>
 <br>
-Da qui in avanti è tutta discesa! Il Surface è tornato a nuova luce! Ho dovuto personalizzare il DE, uso XFCE4 e xMonad a seconda dei momenti, impostando i DPI e le scorciatoie dei tasti multimediali ma ho un <em>“Surface Linux”</em> completamente funzionante!</p>
-    <div class="my-5 flex justify-center"><div class="flex-initial"><hr class="border-1 border-blue-600">
-            <a href="/blog" class="text-blue-600">Leggi altri post</a></div></div></div></div></div></main>
+Da qui in avanti è tutta discesa! Il Surface è tornato a nuova luce! Ho dovuto personalizzare il DE, uso XFCE4 e xMonad a seconda dei momenti, impostando i DPI e le scorciatoie dei tasti multimediali ma ho un <em>“Surface Linux”</em> completamente funzionante!</p></div>
+    <div class="my-8 flex justify-center"><div class="flex-initial"><hr class="border-1 border-blue-600">
+            <a href="/blog" class="text-blue-600 hover:text-blue-900">Leggi altri post</a>
+            <hr class="border-1 border-blue-600"></div></div></div></div>
+		<main><div class="flex flex-col justify-center items-center text-center bg-blue-200 rounded-xl my-2"><span class="text-xs"> </span>
+        <span class="text-blue-800 text-sm font-semibold">canox82 - 2021</span>
+        <span class="text-xs"> </span></div></main></div></main>
 
 
 

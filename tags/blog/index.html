@@ -4,7 +4,7 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>C82 - Blog</title>
+		
 
 		
 
@@ -12,8 +12,7 @@
 		<link rel="modulepreload" href="/_app/chunks/vendor-8dfe4840.js">
 		<link rel="modulepreload" href="/_app/chunks/preload-helper-ec9aa979.js">
 		<link rel="modulepreload" href="/_app/pages/__layout.svelte-4aa2ab01.js">
-		<link rel="modulepreload" href="/_app/pages/blog/__layout.svelte-ba83c075.js">
-		<link rel="modulepreload" href="/_app/pages/blog/index.svelte-518c439b.js">
+		<link rel="modulepreload" href="/_app/pages/tags/[tags].svelte-89560a03.js">
 		<link rel="stylesheet" href="/_app/assets/start-464e9d0a.css">
 		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-6fafa4ff.css">
 
@@ -32,14 +31,13 @@
 					error: null,
 					nodes: [
 						import("/_app/pages/__layout.svelte-4aa2ab01.js"),
-						import("/_app/pages/blog/__layout.svelte-ba83c075.js"),
-						import("/_app/pages/blog/index.svelte-518c439b.js")
+						import("/_app/pages/tags/[tags].svelte-89560a03.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
-						path: "\u002Fblog",
+						path: "\u002Ftags\u002Fblog",
 						query: new URLSearchParams(""),
-						params: {}
+						params: {tags:"blog"}
 					}
 				}
 			});
@@ -53,38 +51,32 @@
         <a href="/blog" class="text-blue-800 hover:text-blue-500">Blog</a>
         <a href="/about" class="text-blue-800 hover:text-blue-500">About Me</a></nav></main>
 		<div class="mx-5">
+    <div class="flex justify-center items-center"><div class="flex-initial py-1 px-2 mx-2 mb-5 rounded-xl bg-blue-500"><span class="text-2xl text-gray-100">blog</span></div></div>
 
-<main><p class="text-center text-blue-800 text-2xl">Elenco Post</p>
-    <ul class="flex flex-col-reverse"><li class="flex-initial"><a href="./blog/20211102" class="items-end"><span class="text-blue-800 text-lg">Primo Post</span>
-                <span class="text-blue-800 text-sm">∞ 2021/11/02 20:30</span>
+    
+    <ul class="flex flex-col-reverse"><li class="flex-initial"><a href="./../blog/20211102" class="item-end"><span class="text-blue-800 text-lg">Primo Post</span>
+                <span class="text-blue-800 tex-sm">2021/11/02 20:30</span>
                 <div class="flex"><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">blog</p>
                     </div><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">crescita</p>
                     </div></div>
                 <p class="italic text-blue-800 text-sm"> Da qualche parte bisognava pur iniziare... :) In questo primo post cercherò di rispondere alle classiche 5 domande: Che cosa? Chi? Dove? Quando? Perchè? Se siete interessati proseguite nella lettura.</p>
-                <hr class="border-1 border-blue-800 border-dotted justify-center my-2"></a>
-        </li><li class="flex-initial"><a href="./blog/20211103" class="items-end"><span class="text-blue-800 text-lg">Ho installato ArchLinux sul Surface!</span>
-                <span class="text-blue-800 text-sm">∞ 2021/11/03 21:00</span>
-                <div class="flex"><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">linux</p>
-                    </div><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">surface pro</p>
-                    </div></div>
-                <p class="italic text-blue-800 text-sm"> Da un po&#39; di tempo il mio vecchio Surface 4 Pro arrancava un po&#39;, allora mi son detto perchè non proviamo ad installare una distro di linux?</p>
-                <hr class="border-1 border-blue-800 border-dotted justify-center my-2"></a>
-        </li><li class="flex-initial"><a href="./blog/20211104" class="items-end"><span class="text-blue-800 text-lg">Aggiornamenti al Blog</span>
-                <span class="text-blue-800 text-sm">∞ 2021/11/04 18:00</span>
+                <hr class="border-1 border-blue-400 justify-center my-2"></a>
+        </li><li class="flex-initial"><a href="./../blog/20211104" class="item-end"><span class="text-blue-800 text-lg">Aggiornamenti al Blog</span>
+                <span class="text-blue-800 tex-sm">2021/11/04 18:00</span>
                 <div class="flex"><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">blog</p>
                     </div><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">sveltejs</p>
                     </div><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">tailwindcss</p>
                     </div></div>
                 <p class="italic text-blue-800 text-sm"> Oggi ho dato un&#39;aggiornata al codice del blog, ho utilizzato TailwindCSS e SvelteKit...</p>
-                <hr class="border-1 border-blue-800 border-dotted justify-center my-2"></a>
-        </li></ul></main></div>
+                <hr class="border-1 border-blue-400 justify-center my-2"></a>
+        </li></ul></div>
 		<main><div class="flex flex-col justify-center items-center text-center bg-blue-200 rounded-xl my-2"><span class="text-xs"> </span>
         <span class="text-blue-800 text-sm font-semibold">canox82 - 2021</span>
         <span class="text-xs"> </span></div></main></div></main>
 
 
 
-			<script type="application/json" data-type="svelte-data" data-url="./blog/posts.json">{"status":200,"statusText":"","headers":{"content-type":"application/json; charset=utf-8"},"body":"{\"posts\":[{\"layout\":\"blog\",\"title\":\"Primo Post\",\"date\":\"2021\u002F11\u002F02 20:30\",\"tags\":[\"blog\",\"crescita\"],\"pre\":\" Da qualche parte bisognava pur iniziare... :) In questo primo post cercherò di rispondere alle classiche 5 domande: Che cosa? Chi? Dove? Quando? Perchè? Se siete interessati proseguite nella lettura.\",\"slug\":\"20211102\"},{\"layout\":\"blog\",\"title\":\"Ho installato ArchLinux sul Surface!\",\"date\":\"2021\u002F11\u002F03 21:00\",\"tags\":[\"linux\",\"surface pro\"],\"pre\":\" Da un po' di tempo il mio vecchio Surface 4 Pro arrancava un po', allora mi son detto perchè non proviamo ad installare una distro di linux?\",\"slug\":\"20211103\"},{\"layout\":\"blog\",\"title\":\"Aggiornamenti al Blog\",\"date\":\"2021\u002F11\u002F04 18:00\",\"tags\":[\"blog\",\"sveltejs\",\"tailwindcss\"],\"pre\":\" Oggi ho dato un'aggiornata al codice del blog, ho utilizzato TailwindCSS e SvelteKit...\",\"slug\":\"20211104\"}]}"}</script>
+			
 		</div>
 	</body>
 </html>

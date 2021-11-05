@@ -4,7 +4,7 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>C82 - About Me</title>
+		
 
 		
 
@@ -12,7 +12,7 @@
 		<link rel="modulepreload" href="/_app/chunks/vendor-8dfe4840.js">
 		<link rel="modulepreload" href="/_app/chunks/preload-helper-ec9aa979.js">
 		<link rel="modulepreload" href="/_app/pages/__layout.svelte-4aa2ab01.js">
-		<link rel="modulepreload" href="/_app/pages/about.svelte-517741ba.js">
+		<link rel="modulepreload" href="/_app/pages/tags/[tags].svelte-89560a03.js">
 		<link rel="stylesheet" href="/_app/assets/start-464e9d0a.css">
 		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-6fafa4ff.css">
 
@@ -31,13 +31,13 @@
 					error: null,
 					nodes: [
 						import("/_app/pages/__layout.svelte-4aa2ab01.js"),
-						import("/_app/pages/about.svelte-517741ba.js")
+						import("/_app/pages/tags/[tags].svelte-89560a03.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
-						path: "\u002Fabout",
+						path: "\u002Ftags\u002Fsurface%20pro",
 						query: new URLSearchParams(""),
-						params: {}
+						params: {tags:"surface pro"}
 					}
 				}
 			});
@@ -50,14 +50,18 @@
 <main class="flex justify-center"><div class="font-work md:w-10/12 lg:w-8/12"><main><nav class="grid grid-flow-col bg-blue-200 m-5 rounded-xl p-2 text-center text-xl font-semibold md:auto-cols-max gap-x-10"><a href="/" class="text-blue-800 hover:text-blue-500">Home</a>
         <a href="/blog" class="text-blue-800 hover:text-blue-500">Blog</a>
         <a href="/about" class="text-blue-800 hover:text-blue-500">About Me</a></nav></main>
-		
+		<div class="mx-5">
+    <div class="flex justify-center items-center"><div class="flex-initial py-1 px-2 mx-2 mb-5 rounded-xl bg-blue-500"><span class="text-2xl text-gray-100">surface pro</span></div></div>
 
-<main class="mx-5"><div><p class="text-center text-blue-800 text-2xl">About me
-        </p>
-        <p>Appassionato di tecnologia, programmazione, videogames, motociclismo, rugby e football americano. <br>
-            Su questo blog/diario approfondirò ogni mia passione.
-        </p>
-        <p class="italic">canox82</p></div></main>
+    
+    <ul class="flex flex-col-reverse"><li class="flex-initial"><a href="./../blog/20211103" class="item-end"><span class="text-blue-800 text-lg">Ho installato ArchLinux sul Surface!</span>
+                <span class="text-blue-800 tex-sm">2021/11/03 21:00</span>
+                <div class="flex"><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">linux</p>
+                    </div><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">surface pro</p>
+                    </div></div>
+                <p class="italic text-blue-800 text-sm"> Da un po&#39; di tempo il mio vecchio Surface 4 Pro arrancava un po&#39;, allora mi son detto perchè non proviamo ad installare una distro di linux?</p>
+                <hr class="border-1 border-blue-400 justify-center my-2"></a>
+        </li></ul></div>
 		<main><div class="flex flex-col justify-center items-center text-center bg-blue-200 rounded-xl my-2"><span class="text-xs"> </span>
         <span class="text-blue-800 text-sm font-semibold">canox82 - 2021</span>
         <span class="text-xs"> </span></div></main></div></main>
