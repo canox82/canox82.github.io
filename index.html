@@ -4,22 +4,22 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>C82 - Aggiornamenti al Blog</title>
+		<title>C82 - Aggiunta la pagina Argomenti</title>
 
 		
 
-		<link rel="modulepreload" href="/_app/start-10270192.js">
+		<link rel="modulepreload" href="/_app/start-eae6078d.js">
 		<link rel="modulepreload" href="/_app/chunks/vendor-8dfe4840.js">
 		<link rel="modulepreload" href="/_app/chunks/preload-helper-ec9aa979.js">
-		<link rel="modulepreload" href="/_app/pages/__layout.svelte-04216a14.js">
-		<link rel="modulepreload" href="/_app/pages/index.svelte-6e758d38.js">
-		<link rel="modulepreload" href="/_app/pages/blog/20211104.md-671e2e79.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-3fbcf136.js">
+		<link rel="modulepreload" href="/_app/pages/index.svelte-b7d86046.js">
+		<link rel="modulepreload" href="/_app/pages/blog/20211106.md-5b8cc897.js">
 		<link rel="modulepreload" href="/_app/pages/blog/layoutBlog.svelte-c19f5483.js">
 		<link rel="stylesheet" href="/_app/assets/start-464e9d0a.css">
-		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-6ab1a8c0.css">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-17743833.css">
 
 		<script type="module">
-			import { start } from "/_app/start-10270192.js";
+			import { start } from "/_app/start-eae6078d.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":""},
@@ -32,8 +32,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/_app/pages/__layout.svelte-04216a14.js"),
-						import("/_app/pages/index.svelte-6e758d38.js")
+						import("/_app/pages/__layout.svelte-3fbcf136.js"),
+						import("/_app/pages/index.svelte-b7d86046.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -49,40 +49,33 @@
 		<div id="svelte">
 
 
-<main class="flex justify-center"><div class="font-work text-sm md:w-10/12 lg:w-8/12"><main><nav class="grid grid-flow-col bg-blue-200 m-5 rounded-xl p-2 text-center text-xl font-semibold md:auto-cols-max gap-x-10"><a href="/" class="text-blue-800 hover:text-blue-500">Home</a>
+<main class="flex justify-center"><div class="font-work text-sm md:w-10/12 lg:w-8/12"><main class="flex"><div class="flex w-full justify-center items-center text-center space-x-5 bg-blue-200 rounded-xl m-5 font-bold p-2 text-base md:text-xl md:space-x-10"><a href="/" class="text-blue-800 hover:text-blue-500">Home</a>
         <a href="/blog" class="text-blue-800 hover:text-blue-500">Blog</a>
-        <a href="/about" class="text-blue-800 hover:text-blue-500">About Me</a></nav></main>
+        <a href="/argomenti" class="text-blue-800 hover:text-blue-500">Argomenti</a>
+        <a href="/about" class="text-blue-800 hover:text-blue-500">About Me</a></div></main>
 		
 
 <main class="mx-5">
 
-<div><div class="flex flex-col justify-center items-center space-y-0.5 mb-10"><div class="text-center"><p class="text-blue-800 text-2xl">Aggiornamenti al Blog</p>
-            <p class="text-blue-800 text-xs">2021/11/04 18:00</p></div>
+<div><div class="flex flex-col justify-center items-center space-y-0.5 mb-10"><div class="text-center"><p class="text-blue-800 text-2xl">Aggiunta la pagina Argomenti</p>
+            <p class="text-blue-800 text-xs">2021/11/06 21:00</p></div>
         <div class="flex justify-center"><a href="/tags/blog"><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">blog</p></div>
             </a><a href="/tags/sveltejs"><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">sveltejs</p></div>
             </a><a href="/tags/tailwindcss"><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">tailwindcss</p></div>
             </a></div>
-        <div class="text-center text-blue-800 italic w-2/3"> Oggi ho dato un&#39;aggiornata al codice del blog, ho utilizzato TailwindCSS e SvelteKit...</div>
+        <div class="text-center text-blue-800 italic w-2/3"> Come promesso ho aggiunto la pagina Argomenti...</div>
         <hr class="border-1 border-blue-800 border-dotted w-2/3"></div>
-    <div class="content"><p>Tutto il CSS è basato su <a href="https://tailwindcss.com" target="_blank">TailwindCSS</a> un framework che rende molto veloce ed intuitivo lavorare e manutenere i vari stili CSS nelle pagine. Ve lo consiglio!<br>
-Ad esempio vuoi un testo blu in grassetto?  </p>
-<pre class="language-html"><!-- HTML_TAG_START --><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-blue-600 font-bold<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>testo blu<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span></code><!-- HTML_TAG_END --></pre>
-<p> <br>
-Nello specifico ho impostato un font di default, <a href="https://fonts.google.com/specimen/Work+Sans?query=work+sans" target="_blank">Work Sans</a> da Google Fonts. Lo trovo elegante e moderno.
-Ho infine migliorato la gestione dei colori, dimensione testo, adattabilità del layout alle varie dimensioni di schermo e reso il tutto più omogeneo ed uniforme.<br>
+    <div class="content"><p>Come avevo detto, ho aggiunto la pagina di riepilogo degli argomenti trattati. Al momento è molto semplice, si tratta solo di un “recap” dei vari tag presenti con il link che rimanda alla pagina di ricerca per i post che li contengono. Semplice ed efficace.<br>
 <br>
-Dal lato del motore, della ciccia, ho utilizzato <a href="https://kit.svelte.dev" target="_blank">SvelteKit</a>, un framework dotato di router per creare applicazioni in <a href="https://svelte.dev" target="_blank">Svelte</a>, un framework Javascript.<br>
-In passato avevo già utilizzato altri framework Javascript, come <a href="https://reactjs.org" target="_blank">React</a> e <a href="https://angular.io/" target="_blank">Angular</a> ma Svelte ha decisamente una marcia in più, almeno per quello che serve a me ora, sia ben chiaro!<br>
-La sua leggerezza e velocità sono sicuramente i suoi punti forza, produce un codice molto più snello dei suoi concorrenti, ed è molto piacevole da programmare.<br>
-Vi dico solo che ho in mente di convertire i miei vecchi progetti in Svelte da tanto ne sono entusiasta!<br>
+In pratica creo un array tags, poi scorro il JSON dei post e per ogni post controllo se il primo tag è già presente nell’array tags tramite la funzione<br>
+<code>tags.includes(post.tag[i])</code><br>
+se non lo include lo aggiungo con<br>
+<code>tags.push(post.tag[i])</code><br>
+Alla fine per visualizza l’elenco tags mi basta eseguire un ciclo con each.<br>
 <br>
-Comunque tornando a noi, ho aggiunto i TAG ai vari post. Ora se cliccate sopra ad un TAG vi rimanda ad una pagina “riepilogo” con tutti i post che contengono quel determinato TAG. Il prossimo step è costruire una pagina TAG/Argomenti con tutti gli argomenti trattati così da poterli cercare al volo.<br>
-<em>Elenco delle cose da fare al blog:</em></p>
-<ul><li>aggiungere la pagina di riepilogo TAGS  </li>
-<li>aggiungere la pagina dei PROGETTI  </li>
-<li>migliorare il caricamento del post in prima pagina (attualmente è statico, voglio una cosa dinamica con la possibilità di scorrere tra i vari post, magari con un effetto fade o similare)</li></ul>
-<p> <br>
-Queste sono le cose da fare nel breve, poi come sempre le idee arrivano e si implementano.</p></div>
+Per il futuro voglio aggiungere un contatore per ogni argomento, di modo da sapere quante volte è stato trattato. Non è di difficile realizzazione.<br>
+<br>
+Ho anche aggiornato la pagina “About Me”, prima era troppo sintetica, ora forse è troppo prolissa ma vabbè, alla prossima magari troviamo la giusta via di mezzo.</p></div>
     <div class="my-8 flex justify-center"><div class="flex-initial"><hr class="border-1 border-blue-600">
             <a href="/blog" class="text-blue-600 hover:text-blue-900">Leggi altri post</a>
             <hr class="border-1 border-blue-600"></div></div></div></main>
