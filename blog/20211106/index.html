@@ -8,18 +8,18 @@
 
 		
 
-		<link rel="modulepreload" href="/_app/start-c5c0dd14.js">
+		<link rel="modulepreload" href="/_app/start-0e6d6fa8.js">
 		<link rel="modulepreload" href="/_app/chunks/vendor-8dfe4840.js">
 		<link rel="modulepreload" href="/_app/chunks/preload-helper-ec9aa979.js">
 		<link rel="modulepreload" href="/_app/pages/__layout.svelte-3fbcf136.js">
 		<link rel="modulepreload" href="/_app/pages/blog/__layout.svelte-ba83c075.js">
-		<link rel="modulepreload" href="/_app/pages/blog/20211106.md-436ae6fc.js">
+		<link rel="modulepreload" href="/_app/pages/blog/20211106.md-09c76a66.js">
 		<link rel="modulepreload" href="/_app/pages/blog/layoutBlog.svelte-c19f5483.js">
 		<link rel="stylesheet" href="/_app/assets/start-464e9d0a.css">
 		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-3ced299c.css">
 
 		<script type="module">
-			import { start } from "/_app/start-c5c0dd14.js";
+			import { start } from "/_app/start-0e6d6fa8.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":""},
@@ -34,7 +34,7 @@
 					nodes: [
 						import("/_app/pages/__layout.svelte-3fbcf136.js"),
 						import("/_app/pages/blog/__layout.svelte-ba83c075.js"),
-						import("/_app/pages/blog/20211106.md-436ae6fc.js")
+						import("/_app/pages/blog/20211106.md-09c76a66.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -66,12 +66,32 @@
         <hr class="border-1 border-blue-800 border-dotted w-2/3"></div>
     <div class="content"><p>Come avevo detto, ho aggiunto la pagina di riepilogo degli argomenti trattati. Al momento è molto semplice, si tratta solo di un “recap” dei vari tag presenti con il link che rimanda alla pagina di ricerca per i post che li contengono. Semplice ed efficace.<br>
 <br>
-In pratica creo un array tags, poi scorro il JSON dei post e per ogni post controllo se il primo tag è già presente nell’array tags tramite la funzione   </p>
-<pre class="language-javascript"><!-- HTML_TAG_START --><code class="language-javascript">tags<span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span>post<span class="token punctuation">.</span>tag<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></code><!-- HTML_TAG_END --></pre>
-<p>se non lo include lo aggiungo con  </p>
-<pre class="language-javascript"><!-- HTML_TAG_START --><code class="language-javascript">tags<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>post<span class="token punctuation">.</span>tag<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>  </code><!-- HTML_TAG_END --></pre>
-<p>Alla fine per visualizza l’elenco tags mi basta eseguire un ciclo con each.<br>
+In pratica creo un array tags, poi scorro il JSON dei post e per ogni post controllo se il primo tag è già presente nell’array tags tramite la funzione <span class="italic font-bold">.includes()</span></p>
+<pre class="language-javascript"><!-- HTML_TAG_START --><code class="language-javascript"><span class="token keyword">let</span> tags <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token keyword">in</span> posts<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> t <span class="token keyword">in</span> posts<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>metadata<span class="token punctuation">.</span>tags<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>tags<span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span>posts<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>metadata<span class="token punctuation">.</span>tags<span class="token punctuation">[</span>t<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+            tags<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>posts<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>metadata<span class="token punctuation">.</span>tags<span class="token punctuation">[</span>t<span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span></code><!-- HTML_TAG_END --></pre>
+<p>se non è resente lo aggiungo con <span class="italic font-bold">.push()</span>.<br>
 <br>
+Alla fine per visualizzare l’elenco tags mi basta eseguire un ciclo con each.  </p>
+<pre class="language-html"><!-- HTML_TAG_START --><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex flex-col my-5<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    &#123;#each tags as tag&#125;
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex m-1<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>/tags/&#123;tag&#125;<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex-initial py-1 px-2 mx-1 
+                 rounded-lg bg-blue-500  hover:bg-blue-700<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-sm  text-gray-100<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>&#123;tag&#125;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+    &#123;/each&#125;
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">></span></span></code><!-- HTML_TAG_END --></pre>
+<p> <br>
 Per il futuro voglio aggiungere un contatore per ogni argomento, di modo da sapere quante volte è stato trattato. Non è di difficile realizzazione.<br>
 <br>
 Ho anche aggiornato la pagina “About Me”, prima era troppo sintetica, ora forse è troppo prolissa ma vabbè, alla prossima magari troviamo la giusta via di mezzo.</p></div>
