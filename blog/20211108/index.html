@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>C82 Blog - Prima pagina dinamica e favicon</title><meta charset="utf-8" data-svelte="svelte-1e0j8ke"><meta name="author" content="Cristian Canossini" data-svelte="svelte-1e0j8ke"><meta name="description" content="Un blog dove si parla di Linux, programmazione, tecnologia e tutto quello che mi passa per la testa..." data-svelte="svelte-1e0j8ke"><link href="/favicon.png" rel="icon" type="image/png" data-svelte="svelte-1e0j8ke"><meta charset="utf-8" data-svelte="svelte-1marht7"><meta name="author" content="Cristian Canossini" data-svelte="svelte-1marht7"><meta name="description" content="Un blog dove si parla di Linux, programmazione, tecnologia e tutto quello che mi passa per la testa..." data-svelte="svelte-1marht7"><link href="/favicon.png" rel="icon" type="image/png" data-svelte="svelte-1marht7">
+
+		
+
+		<link rel="modulepreload" href="/internal/start-48a6f7c1.js">
+		<link rel="modulepreload" href="/internal/chunks/vendor-7b475766.js">
+		<link rel="modulepreload" href="/internal/chunks/preload-helper-eaf481c8.js">
+		<link rel="modulepreload" href="/internal/pages/__layout.svelte-77ea287b.js">
+		<link rel="modulepreload" href="/internal/pages/blog/__layout.svelte-ad71d0d7.js">
+		<link rel="modulepreload" href="/internal/pages/blog/20211108.md-240899b5.js">
+		<link rel="modulepreload" href="/internal/pages/blog/layoutBlog.svelte-7a815e4d.js">
+		<link rel="stylesheet" href="/internal/assets/start-464e9d0a.css">
+		<link rel="stylesheet" href="/internal/assets/pages/__layout.svelte-3ced299c.css">
+
+		<script type="module">
+			import { start } from "/internal/start-48a6f7c1.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/internal/pages/__layout.svelte-77ea287b.js"),
+						import("/internal/pages/blog/__layout.svelte-ad71d0d7.js"),
+						import("/internal/pages/blog/20211108.md-240899b5.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "\u002Fblog\u002F20211108",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+
+
+<main class="flex justify-center"><div class="font-work text-sm md:w-10/12 lg:w-8/12"><main class="flex"><div class="flex w-full justify-center items-center text-center space-x-5 bg-blue-200 rounded-xl m-5 font-bold p-2 text-base md:text-xl md:space-x-10"><a href="/" class="text-blue-800 hover:text-blue-500">Home</a>
+        <a href="/blog" class="text-blue-800 hover:text-blue-500">Blog</a>
+        <a href="/argomenti" class="text-blue-800 hover:text-blue-500">Argomenti</a>
+        <a href="/about" class="text-blue-800 hover:text-blue-500">About Me</a></div></main>
+		<div class="mx-5">
+
+<div><div class="flex flex-col justify-center items-center space-y-0.5 mb-10"><div class="text-center"><p class="text-blue-800 text-2xl">Prima pagina dinamica e favicon</p>
+            <p class="text-blue-800 text-xs">2021/11/08 16:00</p></div>
+        <div class="flex justify-center"><a href="/tags/blog"><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">blog</p></div>
+            </a><a href="/tags/sveltejs"><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">sveltejs</p></div>
+            </a><a href="/tags/grafica"><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">grafica</p></div>
+            </a></div>
+        <div class="text-center text-blue-800 italic w-2/3"> Ho messo a posto la prima pagina e creato la favicon!</div>
+        <hr class="border-1 border-blue-800 border-dotted w-2/3"></div>
+    <div class="content"><p>Oh adesso iniziamo ad esserci!<br>
+<br>
+Partiamo dalla index, la prima pagina.<br>
+Inizialmente avevo un JSON che ricavava dai post i vari Metadata e lo SLUG, ma non mi permetteva di ottenere direttamente il corpo del markdown. Ho quindi cercato su internet, reddit e forum vari finchè non mi sono imbattuto sulla richiesta di Riccardo (anche lui ha creato un sito in Svelte, <a href="https://pressappoco.it" target="_blank">pressappoco.it</a> dateci un occhio) quindi ho utilizzato la stessa soluzione proposta, modificandola secondo le mie esigenze.<br>
+<br>
+La parte di creazione/modifica del JSON la trovate <a href="https://github.com/pngwn/MDsveX/issues/294" target="_blank">qui</a>, non mi resta che parlarvi di come l’ho implementata a mio uso.<br>
+Nel mio caso specifico mi occorre l’ultimo post; ho richiamato tutti i post con un fetch al JSON e ricavato l’ultimo post dall’array dei post con <span class="italic font-bold">.at(-1)</span><br>
+Successivamente mi è bastato renderizzarlo con <span class="italic font-bold">@html</span></p>
+<pre class="language-svelte"><!-- HTML_TAG_START --><code class="language-svelte"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">context</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>module<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
+    <span class="token keyword">export</span> <span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">load</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">&#123;</span> fetch <span class="token punctuation">&#125;</span></span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        <span class="token keyword">const</span> res <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">fetch</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">./blog.json</span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">const</span> <span class="token punctuation">&#123;</span> posts <span class="token punctuation">&#125;</span> <span class="token operator">=</span> <span class="token keyword">await</span> res<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token punctuation">&#123;</span>
+            props<span class="token operator">:</span> <span class="token punctuation">&#123;</span> posts <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+        <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
+    <span class="token keyword">export</span> <span class="token keyword">let</span> posts<span class="token punctuation">;</span>
+    <span class="token keyword">const</span> lastPost <span class="token operator">=</span> posts<span class="token punctuation">.</span><span class="token function">at</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>
+    <span class="token language-javascript"><span class="token punctuation">&#123;</span>@html lastPost<span class="token punctuation">.</span>html<span class="token punctuation">&#125;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code><!-- HTML_TAG_END --></pre>
+<p> <br>
+In questo modo il blog è semi automatizzato e si evitano inutili e fastidiosi errori, molto bene.<br>
+<br>
+Per quanto riguarda la <span class="italic">favicon</span> o meglio il prototipo di essa, ho utilizzato <a href="https://affinity.serif.com/it/photo/" target="_blank">Affinity Photo</a>. E’ da un po’ di tempo che utilizzo i prodotti di Affinity e mi ci trovo molto bene, ho abbandonato Adobe convertendomi completamente al loro metodo e ne sono entusiasta.<br>
+<br>
+La <span class="italic">favicon</span> è molto semplice, una C con un 82 messo in diagonale, sono caratteri alfanumerici che mi appartegono da sempre e che utilizzo come nickname spesso, qui li ho solo utilizzati in modalità <span class="italic">“codice fiscale”</span> se mi passate il termine.</p></div>
+    <div class="my-8 flex justify-center"><div class="flex-initial"><hr class="border-1 border-blue-600">
+            <a href="/blog" class="text-blue-600 hover:text-blue-900">Leggi altri post</a>
+            <hr class="border-1 border-blue-600"></div></div></div></div>
+		<main><div class="flex flex-col justify-center items-center text-center bg-blue-200 rounded-xl m-5"><span class="text-xs"> </span>
+        <span class="text-blue-800 text-sm font-semibold">canox82 - 2021</span>
+        <span class="text-xs"> </span></div></main></div></main>
+
+
+
+			
+		</div>
+	</body>
+</html>

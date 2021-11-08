@@ -4,21 +4,21 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>C82 - Blog</title>
+		<title>C82 Blog</title><meta charset="utf-8" data-svelte="svelte-1e0j8ke"><meta name="author" content="Cristian Canossini" data-svelte="svelte-1e0j8ke"><meta name="description" content="Un blog dove si parla di Linux, programmazione, tecnologia e tutto quello che mi passa per la testa..." data-svelte="svelte-1e0j8ke"><link href="/favicon.png" rel="icon" type="image/png" data-svelte="svelte-1e0j8ke">
 
 		
 
-		<link rel="modulepreload" href="/_app/start-0e6d6fa8.js">
-		<link rel="modulepreload" href="/_app/chunks/vendor-8dfe4840.js">
-		<link rel="modulepreload" href="/_app/chunks/preload-helper-ec9aa979.js">
-		<link rel="modulepreload" href="/_app/pages/__layout.svelte-3fbcf136.js">
-		<link rel="modulepreload" href="/_app/pages/blog/__layout.svelte-ba83c075.js">
-		<link rel="modulepreload" href="/_app/pages/blog/index.svelte-328d896d.js">
-		<link rel="stylesheet" href="/_app/assets/start-464e9d0a.css">
-		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-3ced299c.css">
+		<link rel="modulepreload" href="/internal/start-48a6f7c1.js">
+		<link rel="modulepreload" href="/internal/chunks/vendor-7b475766.js">
+		<link rel="modulepreload" href="/internal/chunks/preload-helper-eaf481c8.js">
+		<link rel="modulepreload" href="/internal/pages/__layout.svelte-77ea287b.js">
+		<link rel="modulepreload" href="/internal/pages/blog/__layout.svelte-ad71d0d7.js">
+		<link rel="modulepreload" href="/internal/pages/blog/index.svelte-73a7f1e6.js">
+		<link rel="stylesheet" href="/internal/assets/start-464e9d0a.css">
+		<link rel="stylesheet" href="/internal/assets/pages/__layout.svelte-3ced299c.css">
 
 		<script type="module">
-			import { start } from "/_app/start-0e6d6fa8.js";
+			import { start } from "/internal/start-48a6f7c1.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":""},
@@ -31,9 +31,9 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/_app/pages/__layout.svelte-3fbcf136.js"),
-						import("/_app/pages/blog/__layout.svelte-ba83c075.js"),
-						import("/_app/pages/blog/index.svelte-328d896d.js")
+						import("/internal/pages/__layout.svelte-77ea287b.js"),
+						import("/internal/pages/blog/__layout.svelte-ad71d0d7.js"),
+						import("/internal/pages/blog/index.svelte-73a7f1e6.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -49,13 +49,13 @@
 		<div id="svelte">
 
 
+
+
 <main class="flex justify-center"><div class="font-work text-sm md:w-10/12 lg:w-8/12"><main class="flex"><div class="flex w-full justify-center items-center text-center space-x-5 bg-blue-200 rounded-xl m-5 font-bold p-2 text-base md:text-xl md:space-x-10"><a href="/" class="text-blue-800 hover:text-blue-500">Home</a>
         <a href="/blog" class="text-blue-800 hover:text-blue-500">Blog</a>
         <a href="/argomenti" class="text-blue-800 hover:text-blue-500">Argomenti</a>
         <a href="/about" class="text-blue-800 hover:text-blue-500">About Me</a></div></main>
-		<div class="mx-5">
-
-<main><p class="text-center text-blue-800 text-2xl">Elenco Post</p>
+		<div class="mx-5"><main><p class="text-center text-blue-800 text-2xl">Elenco Post</p>
     <ul class="flex flex-col-reverse"><li class="flex-initial"><a href="blog/20211102" class="items-end"><span class="text-blue-800 text-lg">Primo Post</span>
                 <span class="text-blue-800 text-sm">∞ 2021/11/02 20:30</span>
                 <div class="flex"><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">blog</p>
@@ -86,6 +86,14 @@
                     </div></div>
                 <p class="italic text-blue-800 text-sm"> Come promesso ho aggiunto la pagina Argomenti...</p>
                 <hr class="border-1 border-blue-800 border-dotted justify-center my-2"></a>
+        </li><li class="flex-initial"><a href="blog/20211108" class="items-end"><span class="text-blue-800 text-lg">Prima pagina dinamica e favicon</span>
+                <span class="text-blue-800 text-sm">∞ 2021/11/08 16:00</span>
+                <div class="flex"><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">blog</p>
+                    </div><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">sveltejs</p>
+                    </div><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">grafica</p>
+                    </div></div>
+                <p class="italic text-blue-800 text-sm"> Ho messo a posto la prima pagina e creato la favicon!</p>
+                <hr class="border-1 border-blue-800 border-dotted justify-center my-2"></a>
         </li></ul></main></div>
 		<main><div class="flex flex-col justify-center items-center text-center bg-blue-200 rounded-xl m-5"><span class="text-xs"> </span>
         <span class="text-blue-800 text-sm font-semibold">canox82 - 2021</span>
@@ -93,7 +101,7 @@
 
 
 
-			<script type="application/json" data-type="svelte-data" data-url="./blog/posts.json">{"status":200,"statusText":"","headers":{"content-type":"application/json; charset=utf-8"},"body":"{\"posts\":[{\"layout\":\"blog\",\"title\":\"Primo Post\",\"date\":\"2021\u002F11\u002F02 20:30\",\"tags\":[\"blog\",\"crescita\"],\"pre\":\" Da qualche parte bisognava pur iniziare... :) In questo primo post cercherò di rispondere alle classiche 5 domande: Che cosa? Chi? Dove? Quando? Perchè? Se siete interessati proseguite nella lettura.\",\"slug\":\"20211102\"},{\"layout\":\"blog\",\"title\":\"Ho installato ArchLinux sul Surface!\",\"date\":\"2021\u002F11\u002F03 21:00\",\"tags\":[\"linux\",\"surface pro\"],\"pre\":\" Da un po' di tempo il mio vecchio Surface 4 Pro arrancava un po', allora mi son detto perchè non proviamo ad installare una distro di linux?\",\"slug\":\"20211103\"},{\"layout\":\"blog\",\"title\":\"Aggiornamenti al Blog\",\"date\":\"2021\u002F11\u002F04 18:00\",\"tags\":[\"blog\",\"sveltejs\",\"tailwindcss\"],\"pre\":\" Oggi ho dato un'aggiornata al codice del blog, ho utilizzato TailwindCSS e SvelteKit...\",\"slug\":\"20211104\"},{\"layout\":\"blog\",\"title\":\"Aggiunta la pagina Argomenti\",\"date\":\"2021\u002F11\u002F06 21:00\",\"tags\":[\"blog\",\"sveltejs\",\"tailwindcss\"],\"pre\":\" Come promesso ho aggiunto la pagina Argomenti...\",\"slug\":\"20211106\"}]}"}</script>
+			<script type="application/json" data-type="svelte-data" data-url="./blog/posts.json">{"status":200,"statusText":"","headers":{"content-type":"application/json; charset=utf-8"},"body":"{\"posts\":[{\"layout\":\"blog\",\"title\":\"Primo Post\",\"date\":\"2021\u002F11\u002F02 20:30\",\"tags\":[\"blog\",\"crescita\"],\"pre\":\" Da qualche parte bisognava pur iniziare... :) In questo primo post cercherò di rispondere alle classiche 5 domande: Che cosa? Chi? Dove? Quando? Perchè? Se siete interessati proseguite nella lettura.\",\"slug\":\"20211102\"},{\"layout\":\"blog\",\"title\":\"Ho installato ArchLinux sul Surface!\",\"date\":\"2021\u002F11\u002F03 21:00\",\"tags\":[\"linux\",\"surface pro\"],\"pre\":\" Da un po' di tempo il mio vecchio Surface 4 Pro arrancava un po', allora mi son detto perchè non proviamo ad installare una distro di linux?\",\"slug\":\"20211103\"},{\"layout\":\"blog\",\"title\":\"Aggiornamenti al Blog\",\"date\":\"2021\u002F11\u002F04 18:00\",\"tags\":[\"blog\",\"sveltejs\",\"tailwindcss\"],\"pre\":\" Oggi ho dato un'aggiornata al codice del blog, ho utilizzato TailwindCSS e SvelteKit...\",\"slug\":\"20211104\"},{\"layout\":\"blog\",\"title\":\"Aggiunta la pagina Argomenti\",\"date\":\"2021\u002F11\u002F06 21:00\",\"tags\":[\"blog\",\"sveltejs\",\"tailwindcss\"],\"pre\":\" Come promesso ho aggiunto la pagina Argomenti...\",\"slug\":\"20211106\"},{\"layout\":\"blog\",\"title\":\"Prima pagina dinamica e favicon\",\"date\":\"2021\u002F11\u002F08 16:00\",\"tags\":[\"blog\",\"sveltejs\",\"grafica\"],\"pre\":\" Ho messo a posto la prima pagina e creato la favicon!\",\"slug\":\"20211108\"}]}"}</script>
 		</div>
 	</body>
 </html>
