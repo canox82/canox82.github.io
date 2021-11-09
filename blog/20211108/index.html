@@ -4,22 +4,22 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>C82 Blog - Prima pagina dinamica e favicon</title><meta charset="utf-8" data-svelte="svelte-1e0j8ke"><meta name="author" content="Cristian Canossini" data-svelte="svelte-1e0j8ke"><meta name="description" content="Un blog dove si parla di Linux, programmazione, tecnologia e tutto quello che mi passa per la testa..." data-svelte="svelte-1e0j8ke"><link href="/favicon.png" rel="icon" type="image/png" data-svelte="svelte-1e0j8ke"><meta charset="utf-8" data-svelte="svelte-1marht7"><meta name="author" content="Cristian Canossini" data-svelte="svelte-1marht7"><meta name="description" content="Un blog dove si parla di Linux, programmazione, tecnologia e tutto quello che mi passa per la testa..." data-svelte="svelte-1marht7"><link href="/favicon.png" rel="icon" type="image/png" data-svelte="svelte-1marht7">
+		<title>C82 Blog - Prima pagina dinamica e favicon</title><meta charset="utf-8" data-svelte="svelte-1marht7"><meta name="author" content="Cristian Canossini" data-svelte="svelte-1marht7"><meta name="description" content="Un blog dove si parla di Linux, programmazione, tecnologia e tutto quello che mi passa per la testa..." data-svelte="svelte-1marht7"><link href="/favicon.png" rel="icon" type="image/png" data-svelte="svelte-1marht7">
 
 		
 
-		<link rel="modulepreload" href="/internal/start-48a6f7c1.js">
-		<link rel="modulepreload" href="/internal/chunks/vendor-7b475766.js">
+		<link rel="modulepreload" href="/internal/start-7ee3448b.js">
+		<link rel="modulepreload" href="/internal/chunks/vendor-e07562cf.js">
 		<link rel="modulepreload" href="/internal/chunks/preload-helper-eaf481c8.js">
-		<link rel="modulepreload" href="/internal/pages/__layout.svelte-77ea287b.js">
-		<link rel="modulepreload" href="/internal/pages/blog/__layout.svelte-ad71d0d7.js">
-		<link rel="modulepreload" href="/internal/pages/blog/20211108.md-240899b5.js">
-		<link rel="modulepreload" href="/internal/pages/blog/layoutBlog.svelte-7a815e4d.js">
+		<link rel="modulepreload" href="/internal/pages/__layout.svelte-dfe46531.js">
+		<link rel="modulepreload" href="/internal/pages/blog/__layout.svelte-c8ae19c8.js">
+		<link rel="modulepreload" href="/internal/pages/blog/20211108.md-6dd26f6d.js">
+		<link rel="modulepreload" href="/internal/pages/blog/layoutBlog.svelte-66f535dc.js">
 		<link rel="stylesheet" href="/internal/assets/start-464e9d0a.css">
 		<link rel="stylesheet" href="/internal/assets/pages/__layout.svelte-3ced299c.css">
 
 		<script type="module">
-			import { start } from "/internal/start-48a6f7c1.js";
+			import { start } from "/internal/start-7ee3448b.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":""},
@@ -32,9 +32,9 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/internal/pages/__layout.svelte-77ea287b.js"),
-						import("/internal/pages/blog/__layout.svelte-ad71d0d7.js"),
-						import("/internal/pages/blog/20211108.md-240899b5.js")
+						import("/internal/pages/__layout.svelte-dfe46531.js"),
+						import("/internal/pages/blog/__layout.svelte-c8ae19c8.js"),
+						import("/internal/pages/blog/20211108.md-6dd26f6d.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -48,8 +48,6 @@
 	</head>
 	<body>
 		<div id="svelte">
-
-
 
 
 <main class="flex justify-center"><div class="font-work text-sm md:w-10/12 lg:w-8/12"><main class="flex"><div class="flex w-full justify-center items-center text-center space-x-5 bg-blue-200 rounded-xl m-5 font-bold p-2 text-base md:text-xl md:space-x-10"><a href="/" class="text-blue-800 hover:text-blue-500">Home</a>
@@ -78,15 +76,15 @@ Successivamente mi è bastato renderizzarlo con <span class="italic font-bold">@
     <span class="token keyword">export</span> <span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">load</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">&#123;</span> fetch <span class="token punctuation">&#125;</span></span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
         <span class="token keyword">const</span> res <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">fetch</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">./blog.json</span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token keyword">const</span> <span class="token punctuation">&#123;</span> posts <span class="token punctuation">&#125;</span> <span class="token operator">=</span> <span class="token keyword">await</span> res<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">const</span> lastPost <span class="token operator">=</span> posts<span class="token punctuation">.</span><span class="token function">at</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token keyword">return</span> <span class="token punctuation">&#123;</span>
-            props<span class="token operator">:</span> <span class="token punctuation">&#123;</span> posts <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+            props<span class="token operator">:</span> <span class="token punctuation">&#123;</span> lastPost <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
         <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
     <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
 </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
 
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
-    <span class="token keyword">export</span> <span class="token keyword">let</span> posts<span class="token punctuation">;</span>
-    <span class="token keyword">const</span> lastPost <span class="token operator">=</span> posts<span class="token punctuation">.</span><span class="token function">at</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">export</span> <span class="token keyword">let</span> lastPost<span class="token punctuation">;</span>
 </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
 
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>
