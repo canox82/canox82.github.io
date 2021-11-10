@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>C82 Blog - Arch Linux GUI e sitemap con Svelte</title><meta charset="utf-8" data-svelte="svelte-1pmqrcl"><meta name="author" content="Cristian Canossini" data-svelte="svelte-1pmqrcl"><meta name="description" content="Un blog dove si parla di Linux, programmazione, tecnologia e tutto quello che mi passa per la testa..." data-svelte="svelte-1pmqrcl"><meta name="keywords" content="blog,sveltejs,linux,sitemap" data-svelte="svelte-1pmqrcl"><link href="/favicon.png" rel="icon" type="image/png" data-svelte="svelte-1pmqrcl">
+
+		
+
+		<link rel="modulepreload" href="/internal/start-635855b9.js">
+		<link rel="modulepreload" href="/internal/chunks/vendor-e07562cf.js">
+		<link rel="modulepreload" href="/internal/chunks/preload-helper-eaf481c8.js">
+		<link rel="modulepreload" href="/internal/pages/__layout.svelte-dfe46531.js">
+		<link rel="modulepreload" href="/internal/pages/blog/__layout.svelte-c8ae19c8.js">
+		<link rel="modulepreload" href="/internal/pages/blog/20211110.md-fc67b364.js">
+		<link rel="modulepreload" href="/internal/chunks/_layoutBlog-95920349.js">
+		<link rel="stylesheet" href="/internal/assets/start-464e9d0a.css">
+		<link rel="stylesheet" href="/internal/assets/pages/__layout.svelte-3ced299c.css">
+
+		<script type="module">
+			import { start } from "/internal/start-635855b9.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/internal/pages/__layout.svelte-dfe46531.js"),
+						import("/internal/pages/blog/__layout.svelte-c8ae19c8.js"),
+						import("/internal/pages/blog/20211110.md-fc67b364.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "\u002Fblog\u002F20211110",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<main class="flex justify-center"><div class="font-work text-sm md:w-10/12 lg:w-8/12"><main class="flex"><div class="flex w-full justify-center items-center text-center space-x-5 bg-blue-200 rounded-xl m-5 font-bold p-2 text-base md:text-xl md:space-x-10"><a href="/" class="text-blue-800 hover:text-blue-500">Home</a>
+        <a href="/blog" class="text-blue-800 hover:text-blue-500">Blog</a>
+        <a href="/argomenti" class="text-blue-800 hover:text-blue-500">Argomenti</a>
+        <a href="/about" class="text-blue-800 hover:text-blue-500">About Me</a></div></main>
+		<div class="mx-5">
+
+<div><div class="flex flex-col justify-center items-center space-y-0.5 mb-10"><div class="text-center"><p class="text-blue-800 text-2xl">Arch Linux GUI e sitemap con Svelte</p>
+            <p class="text-blue-800 text-xs">2021/11/10 20:30</p></div>
+        <div class="flex justify-center"><a href="/tags/blog"><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">blog</p></div>
+            </a><a href="/tags/sveltejs"><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">sveltejs</p></div>
+            </a><a href="/tags/linux"><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">linux</p></div>
+            </a><a href="/tags/sitemap"><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">sitemap</p></div>
+            </a></div>
+        <div class="text-center text-blue-800 italic w-2/3"> Ho provato questa nuova versione semplificata di Arch e aggiunto la sitemap al blog</div>
+        <hr class="border-1 border-blue-800 border-dotted w-2/3"></div>
+    <div class="content"><p>Per prima cosa partiamo con lo spiegare che cosa è Arch Linux per chi ancora non lo sapesse.<br>
+Arch è una distribuzione Linux, leggera e flessibile che segue strettamente la filosofia KISS (Keep It Simple Stupid), ovvero non viene installato nulla di inutile all’inizio se non un sistema base, dal quale poi l’utente pezzo per pezzo, o meglio pacchetto dopo pacchetto, arriva a costruire il suo sistema su misura.<br>
+Ovviamente tutto ciò porta a dei contro ovvero uno scalino di ingresso notevole per i neofiti, anche se tutto è ottimamente documentato della guida all’installazione e nell’ottima <a href="https://wiki.archlinux.org/" target="_blank">ArchWiki</a> (un patrimonio per ogni utilizzatore di Linux), ed un maggior tempo per avere a disposizione un sistema configurato rispetto a distrubuzioni “pronte subito” come <a href="https://ubuntu.com/" target="_blank">Ubuntu</a>, <a href="https://getfedora.org/it/" target="_blank">Fedora</a> o <a href="https://linuxmint.com/" target="_blank">Mint</a>.<br>
+<br>
+<strong>Ma ecco arrivare in soccorso dei neofiti, o semplicemente a chi non ha voglia di perdere tempo, <a href="https://archlinuxgui.in/" target="_blank">Arch Linux GUI</a>!</strong><br>
+<br>
+Praticamente ci troviamo di fronte ad un’esperienza Arch Linux Vanilla (ovvero pura) con un comodo e moderno installer grafico preconfigurata in diverse edizioni a seconda del DE (Desktop Environment) da noi preferito:  </p>
+<ul><li>Plasma Edition</li>
+<li>Gnome Edition</li>
+<li>Xfce Edition</li>
+<li>Cinnamon Edition</li>
+<li>Mate Edition</li>
+<li>Windows Manager Edition (è possibile scegliere tra I3 e BSPWM)  </li></ul>
+<p> <br>
+L’installazione è fluida, come da prassi ci vengono chieste le solite formalità: lingua, layout tastiera, ora locale, ci viene poi chiesto se vogliamo partizionare il disco o se preferiamo lasciare gestire lo spazio vuoto all’installer. Dopo 10-15 minuti il sistema è pronto a riavviarsi dentro la <strong>nostra Arch</strong>, perfettamente configurata.<br>
+Se volete lanciare un aggiornamento non vi resta che aprire il terminale e dare un <strong>sudo pacman -Syu</strong> i repository sono già stati selezionati e ottimizzati per avere i più veloci per voi!<br>
+
+Che dire, <a href="https://archlinuxgui.in/" target="_blank">Arch Linux GUI</a> è forse l’ultimo tassello che serviva per rendere più fruibile Arch!  </p>
+<p>   </p>
+<hr class="my-5 border-dotted">  
+ 
+<p>E ora parliamo della sitemap.<br>
+Cosa è? Fondamentalmente è la mappa delle pagine che compongono il sito divise nelle varie cartelle e sotto-cartelle e si rivela utile per i vari crawler bot indicizzatori, in quanto avendola a disposizione sanno subito dove andare a trovare le pagine da indicizzare senza percorrere i link sparsi per il sito.<br>
+<br>
+Vediamo quindi come fare ad ottenere un <strong>sitemap.xml</strong> su Svelte in modo rapido e indolore.<br>
+Ci viene in aiuto <a href="https://github.com/bartholomej/svelte-sitemap" target="_blank">svelte-sitemap</a>, quindi per prima cosa procediamo ad installarlo con<br>
+<strong>npm install svelte-sitemap –save-dev</strong><br>
+successivamente andiamo ad aggiungere al file <strong>package.json</strong></p>
+<pre class="language-json"><!-- HTML_TAG_START --><code class="language-json"><span class="token punctuation">&#123;</span>
+  <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"my-project"</span><span class="token punctuation">,</span>
+  <span class="token property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">"postbuild"</span><span class="token operator">:</span> <span class="token string">"svelte-sitemap --domain https://mydomain.com"</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span></code><!-- HTML_TAG_END --></pre>
+<p>sostituendo <em>mydomain.com</em> con il vostro dominio logicamente.<br>
+In questo modo dopo ogni <strong>npm run build</strong> ci ritroveremo il nostro <strong>sitemap.xml</strong> all’interno della cartella <strong>./build</strong><br>
+<br>
+Ed ecco qua il gioco è fatto!<br>
+E poi la gente si stupisce quando mi vede fare gli occhi da innamorato mentre parlo di Svelte…</p></div>
+    <div class="my-8 flex justify-center"><div class="flex-initial"><hr class="border-1 border-blue-600">
+            <a href="/blog" class="text-blue-600 hover:text-blue-900">Leggi altri post</a>
+            <hr class="border-1 border-blue-600"></div></div></div></div>
+		<main><div class="flex flex-col justify-center items-center text-center bg-blue-200 rounded-xl m-5"><span class="text-xs"> </span>
+        <span class="text-blue-800 text-sm font-semibold">canox82 - 2021</span>
+        <span class="text-xs"> </span></div></main></div></main>
+
+
+
+			
+		</div>
+	</body>
+</html>

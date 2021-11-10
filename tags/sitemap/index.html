@@ -4,21 +4,20 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>C82 Blog - undefined</title><meta charset="utf-8" data-svelte="svelte-1marht7"><meta name="author" content="Cristian Canossini" data-svelte="svelte-1marht7"><meta name="description" content="Un blog dove si parla di Linux, programmazione, tecnologia e tutto quello che mi passa per la testa..." data-svelte="svelte-1marht7"><link href="/favicon.png" rel="icon" type="image/png" data-svelte="svelte-1marht7">
+		
 
 		
 
-		<link rel="modulepreload" href="/internal/start-7ee3448b.js">
+		<link rel="modulepreload" href="/internal/start-635855b9.js">
 		<link rel="modulepreload" href="/internal/chunks/vendor-e07562cf.js">
 		<link rel="modulepreload" href="/internal/chunks/preload-helper-eaf481c8.js">
 		<link rel="modulepreload" href="/internal/pages/__layout.svelte-dfe46531.js">
-		<link rel="modulepreload" href="/internal/pages/blog/__layout.svelte-c8ae19c8.js">
-		<link rel="modulepreload" href="/internal/pages/blog/layoutBlog.svelte-66f535dc.js">
+		<link rel="modulepreload" href="/internal/pages/tags/[tags].svelte-8246e96f.js">
 		<link rel="stylesheet" href="/internal/assets/start-464e9d0a.css">
 		<link rel="stylesheet" href="/internal/assets/pages/__layout.svelte-3ced299c.css">
 
 		<script type="module">
-			import { start } from "/internal/start-7ee3448b.js";
+			import { start } from "/internal/start-635855b9.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":""},
@@ -32,14 +31,13 @@
 					error: null,
 					nodes: [
 						import("/internal/pages/__layout.svelte-dfe46531.js"),
-						import("/internal/pages/blog/__layout.svelte-c8ae19c8.js"),
-						import("/internal/pages/blog/layoutBlog.svelte-66f535dc.js")
+						import("/internal/pages/tags/[tags].svelte-8246e96f.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
-						path: "\u002Fblog\u002FlayoutBlog",
+						path: "\u002Ftags\u002Fsitemap",
 						query: new URLSearchParams(""),
-						params: {}
+						params: {tags:"sitemap"}
 					}
 				}
 			});
@@ -54,16 +52,19 @@
         <a href="/argomenti" class="text-blue-800 hover:text-blue-500">Argomenti</a>
         <a href="/about" class="text-blue-800 hover:text-blue-500">About Me</a></div></main>
 		<div class="mx-5">
+    <div class="flex justify-center items-center"><div class="flex-initial py-1 px-2 mx-2 mb-5 rounded-xl bg-blue-500"><span class="text-2xl text-gray-100">sitemap</span></div></div>
 
-<div><div class="flex flex-col justify-center items-center space-y-0.5 mb-10"><div class="text-center"><p class="text-blue-800 text-2xl">undefined</p>
-            <p class="text-blue-800 text-xs">undefined</p></div>
-        <div class="flex justify-center"></div>
-        <div class="text-center text-blue-800 italic w-2/3">undefined</div>
-        <hr class="border-1 border-blue-800 border-dotted w-2/3"></div>
-    <div class="content"></div>
-    <div class="my-8 flex justify-center"><div class="flex-initial"><hr class="border-1 border-blue-600">
-            <a href="/blog" class="text-blue-600 hover:text-blue-900">Leggi altri post</a>
-            <hr class="border-1 border-blue-600"></div></div></div></div>
+    
+    <ul class="flex flex-col-reverse"><li class="flex-initial"><a href="./../blog/20211110" class="item-end"><span class="text-blue-800 text-lg">Arch Linux GUI e sitemap con Svelte</span>
+                <span class="text-blue-800 tex-sm">2021/11/10 20:30</span>
+                <div class="flex"><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">blog</p>
+                    </div><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">sveltejs</p>
+                    </div><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">linux</p>
+                    </div><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">sitemap</p>
+                    </div></div>
+                <p class="italic text-blue-800 text-sm"> Ho provato questa nuova versione semplificata di Arch e aggiunto la sitemap al blog</p>
+                <hr class="border-1 border-blue-400 justify-center my-2"></a>
+        </li></ul></div>
 		<main><div class="flex flex-col justify-center items-center text-center bg-blue-200 rounded-xl m-5"><span class="text-xs"> </span>
         <span class="text-blue-800 text-sm font-semibold">canox82 - 2021</span>
         <span class="text-xs"> </span></div></main></div></main>
