@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="google-site-verification" content="-Kt441xWToHW0ohTI7KsW9cOjsxlo45lFg96qxTj3Ow" />
+		<title>C82 Blog - Fedora Workstation 35</title><meta name="author" content="Cristian Canossini" data-svelte="svelte-b9cj0a"><meta name="description" content="Un blog dove si parla di Linux, programmazione, tecnologia e tutto quello che mi passa per la testa..." data-svelte="svelte-b9cj0a"><meta name="keywords" content="linux" data-svelte="svelte-b9cj0a">
+
+		
+
+		<link rel="modulepreload" href="/internal/start-e40bfd18.js">
+		<link rel="modulepreload" href="/internal/chunks/vendor-e07562cf.js">
+		<link rel="modulepreload" href="/internal/chunks/preload-helper-eaf481c8.js">
+		<link rel="modulepreload" href="/internal/pages/__layout.svelte-dfe46531.js">
+		<link rel="modulepreload" href="/internal/pages/blog/__layout.svelte-c8ae19c8.js">
+		<link rel="modulepreload" href="/internal/pages/blog/20211117.md-8d997aef.js">
+		<link rel="modulepreload" href="/internal/chunks/_layoutBlog-75fac0b8.js">
+		<link rel="stylesheet" href="/internal/assets/start-464e9d0a.css">
+		<link rel="stylesheet" href="/internal/assets/pages/__layout.svelte-3ced299c.css">
+
+		<script type="module">
+			import { start } from "/internal/start-e40bfd18.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/internal/pages/__layout.svelte-dfe46531.js"),
+						import("/internal/pages/blog/__layout.svelte-c8ae19c8.js"),
+						import("/internal/pages/blog/20211117.md-8d997aef.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "\u002Fblog\u002F20211117",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<main class="flex justify-center"><div class="font-work text-sm md:w-10/12 lg:w-8/12"><main class="flex"><div class="flex w-full justify-center items-center text-center space-x-5 bg-blue-200 rounded-xl m-5 font-bold p-2 text-base md:text-xl md:space-x-10"><a href="/" class="text-blue-800 hover:text-blue-500">Home</a>
+        <a href="/blog" class="text-blue-800 hover:text-blue-500">Blog</a>
+        <a href="/argomenti" class="text-blue-800 hover:text-blue-500">Argomenti</a>
+        <a href="/about" class="text-blue-800 hover:text-blue-500">About Me</a></div></main>
+		<div class="mx-5">
+
+<div><div class="flex flex-col justify-center items-center space-y-0.5 mb-10"><div class="text-center"><p class="text-blue-800 text-2xl">Fedora Workstation 35</p>
+            <p class="text-blue-800 text-xs">2021/11/17 20:30</p></div>
+        <div class="flex justify-center"><a href="/tags/linux"><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">linux</p></div>
+            </a></div>
+        <div class="text-center text-blue-800 italic w-2/3"> L&#39;ultima volta che ho provato una Fedora è stato nel 2011 e l&#39;avevo trovata simpatica, se si può dire di una distribuzione Linux, questa mi farà cambiare idea?</div>
+        <hr class="border-1 border-blue-800 border-dotted w-2/3"></div>
+    <div class="content"><p>Per chi non lo sapesse Fedora è nata come versione libera del sistema Red Hat, inizialmente doveva essere una sorta di community edition di Red Hat (la versione commerciale più famosa di Linux) per aiutare lo sviluppo di quest’ultima ma col tempo ha preso vita propria diventando una distribuzione a se stante e indipendente.<br>
+Mantiene i pacchetti <span class="font-bold">rpm</span> e il gestore di pacchetti <span class="font-bold">dnf</span>, successore del vecchio e caro <span class="font-bold">yum</span>.<br>
+<br>
+Dopo questa breve intro passiamo alla ciccia di questa ultima versione… la 35!<br>
+Il sistema si presenta nella consueta live (di default con Gnome, ma sono disponibili altri media di installazione più essenziali, per i server, il mondo IOT e i container).<br>
+Purtroppo io questo Gnome non riesco a farmelo piacere, anche se devo ammettere che la sua interfaccia molto in stile “touch” può aiutare i meno esperti. (Ma questo ripeto è un problema tutto mio, non mi piace proprio Gnome nell’ultima versione)<br>
+Il sistema dopo l’installazione, semplicissima e a prova di incapace (un marchio di fabbrica di casa Fedora dalle primissime versioni), si riavvia sulla finestra di login, anche qui perfettamente configurata e poi direttamente dentro Gnome.<br>
+Al primo avvio probabilmente il gestore degli aggiornamenti macinerà per qualche minuto perchè dovrà fare un tot di aggiornamenti, ma anche qui il tutto è fatto in autonomia senza che l’utente si debba preoccupare di nulla.  Probabilmente sarà richiesto un riavvio alla fine, stile Windows, se tra i vari aggiornamenti si è aggiornato il kernel.<br>
+Mettiamo che ci occorre un software, clicchiamo in alto a sinistra, ci si apre la plancia con le varie applicazioni e se non lo troviamo possiamo scrivere il nome nel campo ricerca. A questo punto ci viene proposto di installarlo.  Anche qui praticamente tutto gestito in autonomia, dobbiamo scrivere il nome del software e al resto ci pensa il sistema.<br>
+Semplice, efficace e solido. Forse un po’ noioso, ma se devi essere produttivo e non vuoi perdere tempo ad insegnare come si installa questo o quello beh questo è il modo migliore forse.<br>
+<br>
+Naturalmente per chi vuole utilizzare il terminale si può andare di </p>
+<table><tr><td class="px-2"><span class="font-bold italic">sudo dnf upgrade</span></td>
+  <td class="px-2">per aggiornare il sistema</td></tr> 
+<tr><td class="px-2"><span class="font-bold italic">sudo dnf search nomepacchetto</span></td>
+  <td class="px-2">per cercare un pacchetto/software</td></tr> 
+<tr><td class="px-2"><span class="font-bold italic">sudo dnf install nomepacchetto</span></td>
+  <td class="px-2">per installare un pacchetto/software</td></tr> 
+<tr><td class="px-2"><span class="font-bold italic">sudo dnf remove nomepacchetto</span></td>
+  <td class="px-2">per rimuovere un pacchetto/software</td></tr></table>
+<p> <br>
+Insomma tirando le conclusioni, Fedora si conferma ancora di più una distribuzione rocciosa, fatta per chi deve essere produttivo, porta l’eredità Red Hat e si vede!<br>
+La consiglierei? Certamente a chi vuole un “Linux” che lo installi e non si rompe, a chi ha paura di usare il terminale e tutti quelli che “ah ma Linux e difficile”.<br>
+Nel 2011 ho dato in mano un portatile con Fedora a una persona che non aveva mai fatto montaggio video e mai visto una distro Linux, dopo mezza giornata di “addestramento” ha mandato avanti l’analisi video di una squadra di Football Americano per una stagione intera senza il minimo problema!  (sembro Mastrota che deve vendere Fedora!)<br>
+<br>
+Detto ciò per me resta simpatica ma personalmente rimango ad Arch e Void. :P</p></div>
+    <div class="my-8 flex justify-center"><div class="flex-initial"><hr class="border-1 border-blue-600">
+            <a href="/blog" class="text-blue-600 hover:text-blue-900">Leggi altri post</a>
+            <hr class="border-1 border-blue-600"></div></div></div></div>
+		<main><div class="flex flex-col justify-center items-center text-center bg-blue-200 rounded-xl m-5"><span class="text-xs"> </span>
+        <span class="text-blue-800 text-sm font-semibold">canox82 - 2021</span>
+        <span class="text-xs"> </span></div></main></div></main>
+
+
+
+			
+		</div>
+	</body>
+</html>
