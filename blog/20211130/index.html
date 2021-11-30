@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="google-site-verification" content="-Kt441xWToHW0ohTI7KsW9cOjsxlo45lFg96qxTj3Ow" />
+		<title>C82 Blog - ArcoLinux, l&#39;università di Linux?</title><meta name="author" content="Cristian Canossini" data-svelte="svelte-b9cj0a"><meta name="description" content="Un blog dove si parla di Linux, programmazione, tecnologia e tutto quello che mi passa per la testa..." data-svelte="svelte-b9cj0a"><meta name="keywords" content="linux,learning path" data-svelte="svelte-b9cj0a">
+
+		
+
+		<link rel="modulepreload" href="/internal/start-9d76a5b9.js">
+		<link rel="modulepreload" href="/internal/chunks/vendor-e07562cf.js">
+		<link rel="modulepreload" href="/internal/chunks/preload-helper-eaf481c8.js">
+		<link rel="modulepreload" href="/internal/pages/__layout.svelte-dfe46531.js">
+		<link rel="modulepreload" href="/internal/pages/blog/__layout.svelte-c8ae19c8.js">
+		<link rel="modulepreload" href="/internal/pages/blog/20211130.md-5c0f34e3.js">
+		<link rel="modulepreload" href="/internal/chunks/_layoutBlog-75fac0b8.js">
+		<link rel="stylesheet" href="/internal/assets/start-464e9d0a.css">
+		<link rel="stylesheet" href="/internal/assets/pages/__layout.svelte-3ced299c.css">
+
+		<script type="module">
+			import { start } from "/internal/start-9d76a5b9.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/internal/pages/__layout.svelte-dfe46531.js"),
+						import("/internal/pages/blog/__layout.svelte-c8ae19c8.js"),
+						import("/internal/pages/blog/20211130.md-5c0f34e3.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "\u002Fblog\u002F20211130",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<main class="flex justify-center"><div class="font-work text-sm md:w-10/12 lg:w-8/12"><main class="flex"><div class="flex w-full justify-center items-center text-center space-x-5 bg-blue-200 rounded-xl m-5 font-bold p-2 text-base md:text-xl md:space-x-10"><a href="/" class="text-blue-800 hover:text-blue-500">Home</a>
+        <a href="/blog" class="text-blue-800 hover:text-blue-500">Blog</a>
+        <a href="/argomenti" class="text-blue-800 hover:text-blue-500">Argomenti</a>
+        <a href="/about" class="text-blue-800 hover:text-blue-500">About Me</a></div></main>
+		<div class="mx-5">
+
+<div><div class="flex flex-col justify-center items-center space-y-0.5 mb-10"><div class="text-center"><p class="text-blue-800 text-2xl">ArcoLinux, l&#39;università di Linux?</p>
+            <p class="text-blue-800 text-xs">2021/11/30 20:30</p></div>
+        <div class="flex justify-center"><a href="/tags/linux"><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">linux</p></div>
+            </a><a href="/tags/learning path"><div class="flex-initial py-1 px-2 mx-1 rounded-lg bg-blue-500"><p class="text-xs text-gray-100">learning path</p></div>
+            </a></div>
+        <div class="text-center text-blue-800 italic w-2/3"> Promesse da Roberto Cremona e marketing a parte andiamo a vedere se c&#39;è della ciccia in questa derivata ArchLinux, che quindi parte già sotto una buona stella... (della serie Ken Shiro scansate)</div>
+        <hr class="border-1 border-blue-800 border-dotted w-2/3"></div>
+    <div class="content"><p>Come anticipato <a href="https://arcolinux.com/" target="_blank">ArcoLinux</a> è una distribuzione derivata da <a href="https://archlinux.org/" target="_blank">ArchLinux</a> (non ce lo saremo mai potuti immaginare con un nome del genere ma  tant’è) che si presenta con diverse iso utilizzabili a seconda delle nostre esigenze: Virtual Machine, LiveUSB o installate come sistema principali/affiancati.<br>
+Fin qui nulla di nuovo sotto i bit.<br>
+<br>
+Ciò che “stupisce” è la cura nel confezionamento, nel percorso di assistenza all’utente nell’uso quotidiano (più o meno invasivo) e nel design complessivo che ci porta ad avere una distribuzione ed uno strumento completo per ogni tipo di esigenza.<br>
+<br>
+Dobbiamo imparare ad usare Linux?<br>
+Partiamo con l’installazione semplice, partizionamento automatico e in pochi minuti abbiamo un sistema avviabile localizzato con login utente su <a href="https://xfce.org/" target="_blank">Xfce4</a>, da qui tramite GUI aggiorniamo i repository e in automatico se ci sono pacchetti aggiornabili il sistema ci avviserà e provvederà ad aggiornarli.<br>
+Praticamente abbiamo una Arch-Ubuntu!<br>
+<br>
+Diversamente se siamo ad un livello più avanzato e vogliamo una personalizzazione maggiore del nostro sistema e della nostra esperienza potremmo partire da un’installazione avanzata, dove ci verranno poste più domande e sarà necessaria una maggior conoscenza del nostro sistema hardware, per poi ritrovarci a seconda delle nostre scelte in un sistema grafico oppure a terminale.<br>
+Da qui in avanti ci aspetta quindi un’esperienza simil-Arch.<br>
+<br>
+Al livello massimo di conoscenza e personalizzazione possiamo partire dall’installazione da terminale. Da qui possiamo installare i vari programmi, Desktop Environment e tutto quello che ci serve tramite degli script. Questa è l’esperienza più simile e formativa rispetto ad una Arch Linux nuda e cruda.<br>
+Si parte da zero o quasi e si costruisce mattone per mattone il proprio sistema su misura.<br>
+<br>
+Ed ecco svelato il <span class="italic font-bold">learning path</span> o <span class="italic font-bold">università di linux</span> !<br>
+Seguendo le varie fasi, partendo dal livello base e salendo piano piano si può arrivare a diventare un esperto o quasi, comunque a raggiungere un ottimo livello di dimestichezza con <a href="https://archlinux.org/" target="_blank">ArchLinux</a>, che ad oggi garantisce una ottima conoscenza del mondo Linux a basso livello.<br>
+Nel loro sito il tutto è diviso in 8 fasi per dare più respiro e aumentare gradualmente le conoscenze senza aver fretta. Qui il <a href="https://www.arcolinux.info/learning-path/" target="_blank">link</a>.<br>
+<br>
+Ecco quindi che <a href="https://arcolinux.com/" target="_blank">ArcoLinux</a> raggiunge appieno il suo obiettivo e diventa una delle mie distro preferite per insegnare e trasmettere la passione Linux.</p></div>
+    <div class="my-8 flex justify-center"><div class="flex-initial"><hr class="border-1 border-blue-600">
+            <a href="/blog" class="text-blue-600 hover:text-blue-900">Leggi altri post</a>
+            <hr class="border-1 border-blue-600"></div></div></div></div>
+		<main><div class="flex flex-col justify-center items-center text-center bg-blue-200 rounded-xl m-5"><span class="text-xs"> </span>
+        <span class="text-blue-800 text-sm font-semibold">canox82 - 2021</span>
+        <span class="text-xs"> </span></div></main></div></main>
+
+
+
+			
+		</div>
+	</body>
+</html>
